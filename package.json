@@ -303,7 +303,7 @@
     "read-cmd-shim": "^4.0.0",
     "read-package-json": "^6.0.4",
     "read-package-json-fast": "^3.0.2",
-    "read-pkg": "^3.0.0",
+    "read-pkg": "^8.1.0",
     "read-pkg-up": "^3.0.0",
     "readable-stream": "^3.6.2",
     "redent": "^3.0.0",
