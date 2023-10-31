@@ -25,6 +25,10 @@ and community managers with powerful insights into their communities. With Predi
 PredictoBot can analyse chat data and predict emerging trends in the community, allowing owners to stay ahead of the
 curve and foster more engaging, dynamic conversations.
 
+## Privacy
+
+See [PRIVACY.md](PRIVACY.md) for details on how PredictoBot handles your data.
+
 ## Technologies
 
 ### Node.js and Discord.js
