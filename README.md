@@ -52,7 +52,33 @@ TODO
 TODO
 
 ## Getting Started
+
+### Hosting Predicto-Bot Yourself
+
+1. Clone the repository
+   ```shell
+      git clone https://github.com/beauthebeau/predicto-bot.git
+      cd predicto-bot
+   ```
+   
+2. Install dependencies
+   ```shell
+      npm install
+      # pip install -r requirements.txt # TODO
+   ```
+   
+3. Run the bot
+   ```shell
+      npm run start
+      # or, for development
+      npm run dev
+   ```
+   
+### Using the Public Bot
 TODO
+
+
+
 
 ## Usage
 TODO
