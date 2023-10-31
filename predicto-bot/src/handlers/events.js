@@ -10,7 +10,7 @@ const { Logger } = require('../utils/logger');
 const {join} = require("path");
 const fs = require('fs');
 
-const eventsLogger = new Logger('events', false);
+const eventsLogger = new Logger('events', true);
 
 // ==================== //
 

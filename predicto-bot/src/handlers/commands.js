@@ -11,7 +11,7 @@ const { REST, Routes } = require('discord.js');
 const {join} = require("path");
 const fs = require('fs');
 
-const commandsLogger = new Logger('cmds', false);
+const commandsLogger = new Logger('cmds', true);
 const token = process.env.DEV_MODE ? process.env.TOKEN : process.env.DEV_TOKEN;
 const rest = new REST({ version: '9' }).setToken(token);
 
