@@ -9,6 +9,19 @@ const userSchema = new Schema({
 
 });
 
+userSchema.pre('save', async function (next) {
+
+    // If the user has just been created
+    if (this.isNew) {
+        const guild = this.guild
+        guild.users.push(this._id);
+        await guild.save();
+    }
+
+    next();
+
+});
+
 module.exports = mongoose.model('User', userSchema);
 
 
