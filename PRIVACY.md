@@ -39,7 +39,7 @@ its insights. Specifically:
 ## Contact Us
 
 If you have any questions or concerns about this Privacy Policy, please contact us at 
-[beau@beauthebeau.pro](mailto:beau@beauthebeau.pro). 
+[beau@beauthebeau.pro](mailto:beau@beauthebeau.pro) or on [Discord](https://discord.com/users/729567972070391848)
 
 ## Changes to this Policy
 
