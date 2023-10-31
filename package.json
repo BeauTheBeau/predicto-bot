@@ -376,7 +376,7 @@
     "upath": "^2.0.1",
     "util-deprecate": "^1.0.2",
     "uuid": "^9.0.1",
-    "v8-compile-cache": "^2.3.0",
+    "v8-compile-cache": "^2.4.0",
     "validate-npm-package-license": "^3.0.4",
     "validate-npm-package-name": "^5.0.0",
     "wcwidth": "^1.0.1",
