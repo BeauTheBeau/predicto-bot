@@ -6,7 +6,7 @@
 // ==================== //
 
 require('dotenv').config();
-const { logger, Logger } = require('../utils/logger');
+const { Logger } = require('../utils/logger');
 const { REST, Routes } = require('discord.js');
 const {join} = require("path");
 const fs = require('fs');
@@ -62,20 +62,19 @@ module.exports = async (client) => {
     //     buttons.push(button.data.toJSON());
     // }
 
-    // Register commands
+    // Register commands and buttons
     await registerCommands(client, commands);
     // await registerCommands(client, buttons);
 
-    // Log commands
+    // Log registered commands and buttons
     commandsLogger.separator();
     commandsLogger.info(`Registered ${commands.length} slash commands`);
-    commandsLogger.info(`Registered ${buttons.length} slash buttons`);
+    commandsLogger.info(`Registered ${buttons.length} buttons`);
     commandsLogger.separator();
 
     client.on('interactionCreate', async interaction => {
 
         if (!interaction.isCommand()) return;
-        commandsLogger.info(`${interaction.user.tag} triggered an interaction.`);
 
         const command = client.commands.get(interaction.commandName);
         if (!command) {
