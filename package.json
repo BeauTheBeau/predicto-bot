@@ -212,7 +212,7 @@
     "log-symbols": "^4.1.0",
     "lru-cache": "^6.0.0",
     "make-dir": "^4.0.0",
-    "make-fetch-happen": "^10.2.1",
+    "make-fetch-happen": "^13.0.0",
     "map-obj": "^4.3.0",
     "meow": "^8.1.2",
     "merge-stream": "^2.0.0",
