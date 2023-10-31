@@ -6,7 +6,8 @@ const { logger, Logger } = require('./utils/logger');
 const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
-const chalk = require('chalk');
+
+const arguments = process.argv.slice(2);
 
 // ==================== //
 
@@ -76,11 +77,18 @@ client.login(process.env.DEV_MODE ? process.env.TOKEN : process.env.DEV_TOKEN).t
     clientLogger.success(`Logged in to Discord`)
 
     // Load commands and buttons, if the directory exists
-    if (fs.existsSync(path.join(__dirname, '..', 'commands'))) await loadCommands();
-    if (fs.existsSync(path.join(__dirname, '..', 'buttons'))) await loadButtons();
+
+    // If arg --no-commands is passed, don't load commands
+    if (arguments.includes('--no-commands')) clientLogger.warn(`Skipping loading commands`)
+    else if (fs.existsSync(path.join(__dirname, '..', 'commands'))) await loadCommands();
+
+    // If arg --no-buttons is passed, don't load buttons
+    if (arguments.includes('--no-buttons')) clientLogger.warn(`Skipping loading buttons`)
+    else if (fs.existsSync(path.join(__dirname, '..', 'buttons'))) await loadButtons();
 
     // Initialize command and button handlers
     await require('./handlers/commands')(client);
+    await require('./handlers/events')(client);
     // await require('./handlers/buttons')(client);
 
 
