@@ -1,6 +1,6 @@
 # PredictoBot Monorepo
 
-> Uncover Chat Trends with AI Insights
+> Uncover Chat Trends with AI-Powered Insights
 
 ## Table of Contents
 
