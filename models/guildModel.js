@@ -6,6 +6,7 @@ const guildSchema = new Schema({
     guild_id: {type: String, required: true},
     guild_name: {type: String, required: true},
 
+    owner: {type: Schema.Types.ObjectId, ref: 'User'},
     users: [{type: Schema.Types.ObjectId, ref: 'User'}],
     messages: [{type: Schema.Types.ObjectId, ref: 'Message'}],
     trends: [{type: Schema.Types.ObjectId, ref: 'Trend'}],
