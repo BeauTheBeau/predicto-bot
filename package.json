@@ -287,7 +287,7 @@
     "path-type": "^4.0.0",
     "picomatch": "^2.3.1",
     "pify": "^5.0.0",
-    "pkg-dir": "^4.2.0",
+    "pkg-dir": "^7.0.0",
     "pretty-format": "^29.7.0",
     "proc-log": "^3.0.0",
     "process-nextick-args": "^2.0.1",
